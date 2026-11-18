@@ -1,0 +1,25 @@
+name: 功能建议 / Idea
+description: 说说你想改善的使用场景
+title: "[建议] "
+body:
+  - type: markdown
+    attributes:
+      value: 建议会公开显示，请使用不涉及私人信息的示例。
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 你在什么场景下遇到了不便？
+      placeholder: 描述你想完成的事情，以及目前需要多做的步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你希望怎样改善？
+      placeholder: 可以写交互方式，也可以只描述理想结果。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 参考或替代办法（可选）

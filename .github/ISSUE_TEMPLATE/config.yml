@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 安装与权限指引
+    url: https://github.com/wlei24/sparepage-releases#安装与权限指引
+    about: 首次打开、辅助功能授权和双击粘贴排查
+  - name: 产品官网
+    url: https://wlei24.github.io/sparepage-releases/
+    about: 功能介绍、交互演示与最新下载

@@ -1,0 +1,57 @@
+name: 问题反馈 / Bug
+description: 安装、复制、粘贴、搜索或显示异常
+title: "[问题] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！这里的内容会公开显示，请勿粘贴私人剪贴板内容、密码或密钥；截图请先遮盖私人信息。
+        可在拾贴「关于 → 复制诊断摘要」获取版本、系统和权限状态；旧版没有此按钮时手动填写即可。
+  - type: dropdown
+    id: category
+    attributes:
+      label: 问题类型
+      options:
+        - 安装或启动
+        - 剪贴板记录
+        - 双击或快捷键粘贴
+        - 搜索与收藏
+        - 界面或多屏显示
+        - 备份与恢复
+        - 更新或官网
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 出现了什么问题？
+      placeholder: 例如：双击卡片后列表收起，但备忘录输入框中没有内容。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 如何重现？
+      placeholder: |
+        1. 在哪个应用、什么页面操作
+        2. 复制了哪种内容（文字、图片或文件，不要提供私人正文）
+        3. 做了什么操作，随后出现什么情况
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望的结果
+      placeholder: 正常情况下应该发生什么？
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 版本、系统与权限状态
+      description: 粘贴应用内的诊断摘要，或手动填写应用版本、macOS 版本和辅助功能是否已授权。
+      render: text
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息（可选）
+      description: 可以补充已尝试的解决方法，或经过遮盖的截图。不要上传完整历史库、备份或原始日志。

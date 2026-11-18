@@ -132,7 +132,7 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 ## 反馈与开发者
 
-开发者：**Jeremy Wang** · [提交问题与建议](https://github.com/wlei24/sparepage-releases/issues)
+开发者：**Jeremy Wang** · [提交问题与建议](https://github.com/wlei24/sparepage-releases/issues/new/choose)
 
 本仓库包含安装包发布、使用说明、产品官网和公开下载统计，**不包含应用源代码**。
 
@@ -147,9 +147,20 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 | `docs/assets/js/` | 官网交互与看板逻辑 |
 | `data/` | 公开的安装包下载汇总和历史快照 |
 | `.github/workflows/` | 每日下载统计自动任务 |
+| `.github/ISSUE_TEMPLATE/` | 问题反馈与功能建议表单 |
+| `tests/` | 官网版本同步逻辑检查 |
 
 安装包在 [Releases](https://github.com/wlei24/sparepage-releases/releases) 中维护，不放入网页目录。下载看板展示 GitHub 安装包下载次数，不代表独立安装人数；没有收集安装者身份或剪贴板内容。
 
 维护页面时修改 `docs/` 中的对应文件。统计任务继续写入 `data/downloads.json`，保留已有历史。GitHub Pages 发布设置为 `main` 分支的 `/docs` 目录，官网与看板访问地址保持不变。
 
 © 2026 Jeremy Wang
+
+
+### 官网版本与反馈维护
+
+官网打开时通过 GitHub 官方接口读取最新稳定发布，只有对应的 Apple Silicon DMG 上传完成后才显示版本号与直达下载。网络异常、访问限额或附件未就绪时保留「最新发布页」入口；不把旧版本固定为默认下载。版本说明链接同步指向对应的发布记录，无需每次手动修改网页。
+
+应用的后续版本在「关于」提供反馈入口和可预览、可复制的诊断摘要，仅包含应用版本、macOS 版本、架构和权限状态，不包含历史或复制正文，也不自动提交。旧版用户可以在反馈表单中手动填写。
+
+维护检查：在仓库目录运行 `node --test tests/website-release.test.cjs`。
