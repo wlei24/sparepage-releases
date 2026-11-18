@@ -1,0 +1,67 @@
+name: Record download statistics
+on:
+  schedule:
+    - cron: '47 15 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/download-stats.yml']
+permissions:
+  contents: write
+concurrency:
+  group: download-statistics
+  cancel-in-progress: false
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Save download counts without collecting user data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import base64, datetime, json, os, urllib.request
+          from zoneinfo import ZoneInfo
+          repo = os.environ['REPO']
+          base = 'https://api.github.com/repos/' + repo
+          headers = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'User-Agent': 'SparePage-download-statistics'}
+          def request(path, payload=None):
+              data = None if payload is None else json.dumps(payload).encode()
+              req = urllib.request.Request(base + path, data=data, headers=headers, method='GET' if data is None else 'PUT')
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  return json.load(response)
+          # Fail on network/schema errors instead of overwriting history with partial data.
+          current = request('/contents/data/downloads.json?ref=main')
+          history = json.loads(base64.b64decode(current['content']))
+          assert history['schema'] == 1 and history['snapshots']
+          assets = {a['id']: dict(a, available=False) for a in history['snapshots'][-1]['assets']}
+          for page in range(1, 101):
+              releases = request('/releases?per_page=100&page=' + str(page))
+              assert isinstance(releases, list)
+              for release in releases:
+                  if release['draft']: continue
+                  for asset in release['assets']:
+                      if not asset['name'].lower().endswith('.dmg'): continue
+                      count = asset['download_count']
+                      assert isinstance(count, int) and count >= 0
+                      previous = assets.get(asset['id'], {})
+                      assets[asset['id']] = {'id': asset['id'], 'version': release['tag_name'], 'name': asset['name'], 'downloads': max(previous.get('downloads', 0), count), 'available': True}
+              if len(releases) < 100: break
+          else:
+              raise RuntimeError('Release pagination limit reached; history left unchanged')
+          now = datetime.datetime.now(datetime.timezone.utc)
+          stamp = now.isoformat().replace('+00:00', 'Z')
+          snapshot = {'at': stamp, 'date': now.astimezone(ZoneInfo('Asia/Shanghai')).date().isoformat(), 'total': sum(a['downloads'] for a in assets.values()), 'assets': list(assets.values())}
+          # Keep the first baseline. Later same-day runs replace only that day's latest point.
+          points = history['snapshots']
+          if len(points) > 1 and points[-1]['date'] == snapshot['date']:
+              points[-1] = snapshot
+          else:
+              points.append(snapshot)
+          history['updated_at'] = stamp
+          content = json.dumps(history, ensure_ascii=False, indent=2) + '\n'
+          result = request('/contents/data/downloads.json', {'message': 'Record aggregate DMG download counts', 'content': base64.b64encode(content.encode()).decode(), 'sha': current['sha'], 'branch': 'main'})
+          print('Saved snapshot:', snapshot['date'], 'total:', snapshot['total'], 'commit:', result['commit']['sha'][:7])
+          PY
