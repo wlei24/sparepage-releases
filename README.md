@@ -6,7 +6,7 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 复制过的会议地址、写到一半的句子、临时保存的图片，不必再回原来的应用翻找。拾贴把它们收进屏幕底部的历史卡片，随时找回、收藏、再次粘贴。
 
-[下载最新体验版](https://github.com/wlei24/sparepage-releases/releases/latest) · [安装与权限指引](#安装与权限指引) · [问题反馈](https://github.com/wlei24/sparepage-releases/issues) · [免责声明](#免责声明)
+[产品官网](https://wlei24.github.io/sparepage-releases/) · [下载看板](https://wlei24.github.io/sparepage-releases/stats.html) · [下载最新体验版](https://github.com/wlei24/sparepage-releases/releases/latest) · [安装与权限指引](#安装与权限指引) · [问题反馈](https://github.com/wlei24/sparepage-releases/issues) · [免责声明](#免责声明)
 
 > **系统要求：Apple Silicon Mac（M 系列芯片），macOS 14 或更新版本。** 当前不提供 Intel 安装包。体验版尚未经过 Apple Developer ID 签名与公证，首次打开或升级时可能需要由你确认系统提示。
 
@@ -16,7 +16,7 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 文字、链接、图片、文件记录统一展示为卡片。卡片保留来源应用、内容预览、复制时间，以不同颜色区分来源，便于快速辨认。
 
-![复制历史：文字、链接、文件、图片和代码卡片](feature-history.png)
+![复制历史：文字、链接、文件、图片和代码卡片](docs/assets/screenshots/feature-history.png)
 
 - **文字与代码**：预览正文，保留复制内容；需要时使用纯文本粘贴。
 - **链接**：用域名和路径帮助识别，不必只看一长串地址。
@@ -28,7 +28,7 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 点击搜索图标或按 **⌘F** 展开搜索框，可以搜索文字、文件名和来源应用。类型筛选帮助聚焦文字、链接、图片等内容；常用片段可以收藏，之后从收藏入口快速找回。
 
-![搜索演示：用“周五”筛选相关复制内容](feature-search.png)
+![搜索演示：用“周五”筛选相关复制内容](docs/assets/screenshots/feature-search.png)
 
 收藏不会被普通历史的定期清理自动删除。普通历史可设置保留数量与过期清理时间，让列表保持好找。
 
@@ -36,7 +36,7 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 唤出快捷键可以自行录制。授权后，双击卡片或按回车即可将内容粘贴回之前的输入框；不授权自动粘贴，也能把内容复制后手动使用。
 
-![设置：快捷键、暂停记录、直接粘贴与权限状态](feature-settings.png)
+![设置：快捷键、暂停记录、直接粘贴与权限状态](docs/assets/screenshots/feature-settings.png)
 
 | 操作 | 默认方式 |
 | --- | --- |
@@ -53,7 +53,7 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 ### 本机保存，备份由你掌握
 
-![隐私设置：加密备份、更新提醒与来源应用排除](feature-privacy.png)
+![隐私设置：加密备份、更新提醒与来源应用排除](docs/assets/screenshots/feature-privacy.png)
 
 - **本机加密**：历史使用 AES-GCM 加密，密钥保存在当前 Mac 的系统钥匙串中。
 - **密码备份**：在设置中导出加密备份；恢复时合并为收藏并跳过重复内容，不覆盖现有历史和设置。
@@ -134,6 +134,22 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 开发者：**Jeremy Wang** · [提交问题与建议](https://github.com/wlei24/sparepage-releases/issues)
 
-本仓库仅发布安装包、使用说明和演示图片，**不包含应用源代码**。
+本仓库包含安装包发布、使用说明、产品官网和公开下载统计，**不包含应用源代码**。
+
+## 仓库目录
+
+| 目录 | 内容 |
+| --- | --- |
+| `docs/` | 产品官网首页与下载看板；GitHub Pages 从此目录发布 |
+| `docs/assets/brand/` | 品牌 Logo |
+| `docs/assets/screenshots/` | 功能介绍截图 |
+| `docs/assets/css/` | 官网与看板的样式 |
+| `docs/assets/js/` | 官网交互与看板逻辑 |
+| `data/` | 公开的安装包下载汇总和历史快照 |
+| `.github/workflows/` | 每日下载统计自动任务 |
+
+安装包在 [Releases](https://github.com/wlei24/sparepage-releases/releases) 中维护，不放入网页目录。下载看板展示 GitHub 安装包下载次数，不代表独立安装人数；没有收集安装者身份或剪贴板内容。
+
+维护页面时修改 `docs/` 中的对应文件。统计任务继续写入 `data/downloads.json`，保留已有历史。GitHub Pages 发布设置为 `main` 分支的 `/docs` 目录，官网与看板访问地址保持不变。
 
 © 2026 Jeremy Wang
