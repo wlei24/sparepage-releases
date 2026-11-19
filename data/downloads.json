@@ -3,7 +3,7 @@
   "repository": "wlei24/sparepage-releases",
   "timezone": "Asia/Shanghai",
   "started_at": "2026-11-18T01:38:25.161Z",
-  "updated_at": "2026-11-18T22:42:32.513136Z",
+  "updated_at": "2026-11-19T22:46:47.580328Z",
   "snapshots": [
     {
       "at": "2026-11-18T01:38:25.161Z",
@@ -48,6 +48,27 @@
     {
       "at": "2026-11-18T22:42:32.513136Z",
       "date": "2026-11-19",
+      "total": 6,
+      "assets": [
+        {
+          "id": 758391587,
+          "version": "v0.2.4",
+          "name": "SparePage-0.2.4-macOS-arm64.dmg",
+          "downloads": 4,
+          "available": true
+        },
+        {
+          "id": 757702526,
+          "version": "v0.2.3",
+          "name": "SparePage-0.2.3-macOS-arm64.dmg",
+          "downloads": 2,
+          "available": true
+        }
+      ]
+    },
+    {
+      "at": "2026-11-19T22:46:47.580328Z",
+      "date": "2026-11-20",
       "total": 6,
       "assets": [
         {
