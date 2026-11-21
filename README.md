@@ -2,13 +2,19 @@
 
 **每一次复制，都值得被记住。**
 
-Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
+Clipboard Manager for macOS · 免费 macOS 工具 · 开发者 Jeremy Wang
 
-复制过的会议地址、写到一半的句子、临时保存的图片，不必再回原来的应用翻找。拾贴把它们收进屏幕底部的历史卡片，随时找回、收藏、再次粘贴。
+拾贴把日常复制变成 Mac 上的一份随手备忘录。寄件时连续复制地址和手机号，按 **⇧⌘V** 即可逐条取用。常用的收货地址、会议链接和开票信息可以点图钉收藏。下次需要，搜几个字就能贴回输入框。
 
-[产品官网](https://wlei24.github.io/sparepage-releases/) · [下载看板](https://wlei24.github.io/sparepage-releases/stats.html) · [下载最新体验版](https://github.com/wlei24/sparepage-releases/releases/latest) · [安装与权限指引](#安装与权限指引) · [问题反馈](https://github.com/wlei24/sparepage-releases/issues) · [免责声明](#免责声明)
+[产品官网](https://wlei24.github.io/sparepage-releases/) · [下载看板](https://wlei24.github.io/sparepage-releases/stats.html) · [下载最新正式版](https://github.com/wlei24/sparepage-releases/releases/latest) · [安装与权限指引](#安装与权限指引) · [问题反馈](https://github.com/wlei24/sparepage-releases/issues) · [免责声明](#免责声明)
 
-> **系统要求：Apple Silicon Mac（M 系列芯片），macOS 14 或更新版本。** 当前不提供 Intel 安装包。体验版尚未经过 Apple Developer ID 签名与公证，首次打开或升级时可能需要由你确认系统提示。
+> **系统要求：Apple Silicon Mac（M 系列芯片），macOS 14 或更新版本。** 当前不提供 Intel 安装包。正式版尚未经过 Apple Developer ID 签名与公证，首次打开或升级时可能需要由你确认系统提示。
+
+## 从 v0.2.4 到 v0.2.5
+
+- **区域截图。** 框选后可移动和调整大小，在选区旁复制图片或保存 PNG。悬停图标可看操作说明。
+- **本机识字。** 需要文字时点击「识字」，核对后直接复制。历史中的图片也可以提取文字。
+- **整理信息。** 把多条消息整理为收货地址、工作待办或自定义字段的表格，核对后再复制。接入指引支持本机 Ollama、OpenAI 兼容接口及 Claude 格式的云端模型。
 
 ## 功能一览
 
@@ -118,7 +124,7 @@ Clipboard Manager for macOS · 免费体验版 · 开发者 Jeremy Wang
 
 ## 隐私与网络
 
-剪贴板内容只保存在本机，不上传，不调用 AI，不收集遥测。仅检查更新时连接 GitHub，安装包由浏览器下载；GitHub 会处理提供下载与更新服务所需的网络请求。可在设置中关闭自动检查更新。
+历史加密保存在本机，截图识字由本机完成。使用 AI 整理时，仅在你确认后向所选模型发送本次选中的原文和字段。应用不收集遥测。检查更新时连接 GitHub，安装包由浏览器下载；GitHub 会处理提供下载与更新服务所需的网络请求。可在设置中关闭自动检查更新。
 
 应用无法识别所有敏感文字。复制密码、密钥、验证码、客户资料等敏感内容前，请按需要暂停记录或排除来源应用。加密不能防止已控制当前登录会话的恶意程序读取正在使用的内容。
 
