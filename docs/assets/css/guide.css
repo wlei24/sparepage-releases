@@ -6,3 +6,6 @@
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*{transition:none!important}}
 
 .nav-download{background:white;color:#18242d;border:1px solid #d9e0e5}.nav-download:hover{background:#f3f6fa}.guide-end{border-top:1px solid var(--line);margin-top:15px;padding-top:30px}.section-title .section-number{background:#f0f4fa;color:#476a9a}
+
+.download-link,.guide-end .download-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}.download-icon{width:18px;height:18px;flex-shrink:0;stroke:currentColor}.nav-download{flex-shrink:0}
+@media(max-width:400px){.nav{gap:12px}.back{font-size:12px}.nav-download{font-size:12px;padding:8px}.nav-download .download-icon{width:16px;height:16px}.nav-download{gap:6px}}
