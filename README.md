@@ -85,7 +85,20 @@ Clipboard Manager for macOS · 免费 macOS 工具 · 开发者 Jeremy Wang
 
 请下载 Assets 中的 DMG。GitHub 自动生成的 **Source code（zip / tar.gz）** 只是本说明仓库的打包文件，不是应用安装包，也不包含应用源码。
 
-如果 macOS 提示无法验证开发者：先确认下载来自本仓库，再参阅 [Apple 关于安全打开 Mac App 的说明](https://support.apple.com/zh-cn/102445)，由你决定是否允许这个特定应用打开。不需要关闭 Gatekeeper、SIP 或其他系统安全保护。如果提示包含恶意软件警告，请停止打开并反馈。
+### 首次打开提示「Apple 无法验证拾贴」
+
+确认安装包来自官网或本仓库后：
+
+1. 在拦截弹窗点 **完成**，不要选「移到废纸篓」。
+2. 打开 **系统设置 → 隐私与安全性**，向下滚到 **安全性**。
+3. 找到「已阻止“拾贴”以保护 Mac」，点右侧 **仍要打开**。
+4. 按系统提示验证身份，再确认打开拾贴。
+
+![向下滚到安全性，点击拾贴旁的仍要打开](docs/assets/screenshots/install-allow-open.png)
+
+没看到按钮？先从「应用程序」尝试启动拾贴，再回到此页面。受公司管理的 Mac 若限制此操作，请联系管理员。此步骤允许应用启动，**不等于开启辅助功能权限**；自动粘贴请继续按下一节授权。
+
+无需关闭 Gatekeeper、SIP 或其他系统安全保护。若系统明确提示「包含恶意软件」或「将损坏电脑」，请停止打开并反馈。[Apple 官方说明](https://support.apple.com/zh-cn/102445) · [官网图文指引](https://wlei24.github.io/sparepage-releases/guide.html#allow-open)
 
 ### 2. 开启辅助功能——用于双击自动粘贴
 

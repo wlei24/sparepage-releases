@@ -9,3 +9,20 @@
 
 .download-link,.guide-end .download-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}.download-icon{width:18px;height:18px;flex-shrink:0;stroke:currentColor}.nav-download{flex-shrink:0}
 @media(max-width:400px){.nav{gap:12px}.back{font-size:12px}.nav-download{font-size:12px;padding:8px}.nav-download .download-icon{width:16px;height:16px}.nav-download{gap:6px}}
+
+/* Installation help stays separate from everyday feature steps. */
+.install-help{margin:28px 0;padding:24px;border:1px solid #dce4ed;border-radius:20px;background:#f6f8fb;scroll-margin-top:100px}
+.install-help-heading{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.install-help-heading>span{display:grid;place-items:center;flex:none;width:32px;height:32px;border-radius:10px;background:#e5ecff;color:#3557b7;font-size:22px}
+.install-help h3{margin:0;font-size:19px;line-height:1.5;color:#1b2934}
+.install-help>p{font-size:14px;line-height:1.8;color:#536272}
+.open-steps{list-style:decimal;margin:20px 0;padding-left:24px}
+.open-steps li{padding:0 0 16px 7px;color:#3557b7}
+.open-steps li::marker{font-weight:700}
+.open-steps strong,.open-steps span{display:block;line-height:1.7}
+.open-steps strong{font-size:16px;color:#1b2934}
+.open-steps span{font-size:14px;color:#536272;margin-top:3px}
+.install-help .visual-details{background:#fff}
+.install-help .install-footnote{font-size:13px;margin:14px 0 0}
+.install-help a{color:#3557b7;text-underline-offset:3px}
+@media(max-width:600px){.install-help{padding:18px}.install-help h3{font-size:17px}}

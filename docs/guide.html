@@ -6,7 +6,7 @@
   <meta name="description" content="从复制、收藏到截图识字，再到连接本地 AI。跟随拾贴使用指南，让重要内容随手可用。">
   <title>使用指南 · 拾贴 SparePage</title>
   <link rel="icon" href="assets/brand/logo.svg">
-  <link rel="stylesheet" href="assets/css/guide.css?v=14">
+  <link rel="stylesheet" href="assets/css/guide.css?v=15">
   <script src="assets/js/release.js" defer></script>
 </head>
 <body>
@@ -56,6 +56,19 @@
         <li><span class="step-number" aria-hidden="true">1</span><div><h3>装好拾贴，复制一条内容</h3><p>打开安装包，将拾贴拖进「应用程序」并启动。连续复制地址和电话，再从菜单栏打开拾贴，就会看到两张历史卡片。</p><div class="install-path" aria-label="将拾贴拖入应用程序"><img src="assets/brand/logo.svg" alt="拾贴" width="32" height="32"><span>拾贴</span><span class="path-arrow" aria-hidden="true">→</span><img src="assets/apps/finder.png" alt="" width="32" height="32"><span>应用程序</span></div></div></li>
         <li><span class="step-number" aria-hidden="true">2</span><div><h3>双击填入，下次接着用</h3><p>把光标放回收货地址栏，用设置中的快捷键唤出拾贴，双击地址卡片即可填入。鼠标移到卡片上，点标题栏的图钉即可收藏。</p><p class="permission-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5c0 4.5 3 7.6 7.5 10 4.5-2.4 7.5-5.5 7.5-10V6L12 3Z"/><path d="m8.5 12 2.3 2.3 4.7-4.7"/></svg><span>自动粘贴需开启「系统设置 → 隐私与安全性 → 辅助功能 → 拾贴」。</span></p></div></li>
       </ol>
+
+      <aside class="install-help" id="allow-open" aria-labelledby="allow-open-heading">
+        <div class="install-help-heading"><span aria-hidden="true">↗</span><h3 id="allow-open-heading">提示「Apple 无法验证拾贴」？这样打开</h3></div>
+        <p>先确认安装包来自拾贴官网或官方 GitHub 发布页，再按下面操作。</p>
+        <ol class="open-steps">
+          <li><strong>点「完成」</strong><span>关闭拦截弹窗，不要选「移到废纸篓」。</span></li>
+          <li><strong>系统设置 → 隐私与安全性</strong><span>向下滚到「安全性」，找到「已阻止“拾贴”以保护 Mac」。</span></li>
+          <li><strong>点拾贴旁的「仍要打开」</strong><span>按系统提示验证身份，并在后续弹窗中确认打开。</span></li>
+        </ol>
+        <details class="visual-details"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h8m-8 4h8m-8 4h4"/></svg><span>看图找到「仍要打开」</span><span class="detail-plus" aria-hidden="true">+</span></summary><div class="details-body"><figure><a href="assets/screenshots/install-allow-open.png"><img src="assets/screenshots/install-allow-open.png" alt="系统设置的隐私与安全性页面，向下滚到安全性，点击已阻止拾贴右侧的仍要打开按钮" loading="lazy" width="1446" height="1252"></a><figcaption>向下滚动后，在「安全性」区域找到拾贴，点右侧「仍要打开」。</figcaption></figure></div></details>
+        <p class="install-footnote">没看到按钮？先从「应用程序」尝试打开一次拾贴，再回到此处。公司管理的 Mac 若限制此操作，请联系管理员。此步骤允许应用启动；自动粘贴还需单独开启下方的辅助功能权限。</p>
+        <p class="install-footnote">无需关闭系统安全保护。如果系统明确提示「包含恶意软件」或「将损坏电脑」，请停止打开并反馈。<a href="https://support.apple.com/zh-cn/102445" target="_blank" rel="noopener noreferrer">Apple 官方说明 ↗</a></p>
+      </aside>
       <details class="visual-details"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18m-12 0v10m6-10v10"/></svg><span>看看历史与收藏的样子</span><span class="detail-plus" aria-hidden="true">+</span></summary><div class="details-body"><figure><a href="assets/screenshots/native-history.png"><img src="assets/screenshots/native-history.png" alt="历史面板中同时保留电话卡和上一条地址卡" loading="lazy" width="1500" height="660"></a><figcaption>连续复制，地址和电话都留在历史里。</figcaption></figure><figure><a href="assets/screenshots/native-favorites.png"><img src="assets/screenshots/native-favorites.png" alt="收藏面板中保存的地址卡" loading="lazy" width="1500" height="660"></a><figcaption>给常用内容点个图钉，下次从收藏里找到。</figcaption></figure></div></details>
     </section>
     <section class="guide-section" id="local-model" aria-labelledby="model-heading">
@@ -85,7 +98,7 @@
     <section class="guide-section" id="history" aria-labelledby="history-heading">
       <div class="section-title"><span class="section-number">04</span><h2 id="history-heading">历史和收藏</h2></div>
       <div class="retention"><div><h3>历史，留在这台 Mac</h3><p>历史加密保存在本机，按设置的天数和条数清理。</p></div><div><h3>收藏，留住常用内容</h3><p>收藏会跳过这项自动清理，常用内容随时可取。</p></div></div>
-      <p class="settings-note">在设置里，还可以暂停记录、排除应用，或导出加密备份。</p>
+      <p class="settings-note">正常升级只替换应用，保留历史、收藏和设置；普通历史仍按你设置的期限与数量清理。升级前正常退出拾贴，再将新版拖入「应用程序」并选择替换。不要用清理工具删除应用数据或钥匙串密钥。重要内容可在设置中导出加密备份。</p>
     </section>
     <div class="guide-end"><img src="assets/brand/logo.svg" alt="" width="42" height="42"><div><strong>准备好了，就从一次复制开始。</strong><a class="download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest"><svg class="download-icon" aria-hidden="true" focusable="false"
   xmlns="http://www.w3.org/2000/svg"
