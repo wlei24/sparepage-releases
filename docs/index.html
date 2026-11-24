@@ -1,32 +1,158 @@
 <!doctype html>
-<html lang="zh-CN">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>拾贴 SparePage · Mac 剪贴板与随手备忘录</title>
-<meta name="description" content="找回复制过的内容，把常用片段收进收藏。拾贴还支持 Mac 区域截图、本机识字和可选的 AI 表格整理。">
-<meta property="og:title" content="拾贴 · 复制过的，随时找回。"><meta property="og:description" content="Mac 剪贴板与随手备忘录，免费下载。">
-<link rel="icon" href="./assets/brand/logo.svg"><link rel="stylesheet" href="./home-v025.css">
-</head>
-<body><a class="skip" href="#main">跳到正文</a>
-<header class="wrap"><nav><a class="brand" href="#main"><img src="./assets/brand/logo.svg" alt="">拾贴 <small>SparePage</small></a><div class="links"><a href="#capture">截图识字</a><a href="#organize">AI 整理</a><a href="#install">安装</a><a class="nav-download download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest">免费下载 ↗</a></div></nav></header>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>拾贴 SparePage · 每一次复制，都值得被记住</title>
+<meta name="description" content="拾贴是一款免费的 Mac 剪贴板与随手备忘录。找回复制过的文字、链接、图片，收藏常用内容，也能接入本地 AI 整理信息。">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/brand/logo.svg"><link rel="stylesheet" href="assets/css/ai-motion.css?v=9"><link rel="stylesheet" href="assets/css/landing-v9.css?v=13">
+<script src="assets/js/landing.js?v=10" defer></script><script src="assets/js/ai-motion.js?v=9" defer></script><script src="assets/js/ocr-motion.js?v=11" defer></script><script src="assets/js/release.js" defer></script>
+<link rel="stylesheet" href="assets/css/ocr-motion.css?v=11">
+<link rel="stylesheet" href="assets/css/ai-section.css?v=12">
+</head><body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="wrap"><nav aria-label="主导航">
+<a class="brand" href="#main"><img src="assets/brand/logo.svg" alt="" width="34" height="34"><strong>拾贴</strong><span>SparePage</span></a>
+<div class="nav-links"><a href="#clipboard">剪贴备忘</a><a href="#local-ai">本地 AI</a><a href="guide.html">使用指南</a></div>
+<a class="nav-download download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest"><svg class="download-icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" />
+</svg>
+<span>下载 Mac 版</span></a>
+</nav></header>
 <main id="main">
-<section class="hero wrap">
-<div class="lead"><div class="category"><i></i> Mac 剪贴板与随手备忘录</div><h1>复制过的，<br><em>随时找回。</em></h1><p>刚复制的地址、每周要用的会议链接，都在一处。按下 <kbd>⇧⌘V</kbd> 找回历史，点一下图钉，把重要内容留在收藏里。</p><a class="primary download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest">免费下载 Mac 版 <b aria-hidden="true">↓</b></a><small class="spec"><span data-release-version>v0.2.5</span> · Apple Silicon · macOS 14+</small></div>
-<div class="figure"><div class="desktop">
-<div class="ribbon r1"></div><div class="ribbon r2"></div><div class="ribbon r3"></div>
-<div class="note" aria-hidden="true"><small>周五 · 工作备忘</small><strong>下午两点，设计例会</strong><span>会议链接和资料都在收藏里。</span></div>
-<div class="shelf"><div class="bar"><div class="bar-brand"><img src="./assets/brand/logo.svg" alt="">拾贴</div><input id="search" type="search" placeholder="搜索记录" aria-label="搜索演示记录"><div class="tabs" aria-label="演示筛选"><button data-filter="all" aria-pressed="true">历史</button><button data-filter="fav" aria-pressed="false">收藏</button></div></div>
-<div class="cards" aria-live="polite">
-<article data-fav="true"><div class="cap purple">日历<button class="pin" aria-label="取消收藏会议链接" aria-pressed="true">★</button></div><strong>周五设计例会</strong><p>14:00 – 14:30<br>每周的入会链接</p><small>会议链接</small></article>
-<article data-fav="false"><div class="cap green">信息<button class="pin" aria-label="收藏收货地址" aria-pressed="false">☆</button></div><strong>收货地址</strong><p>上海市徐汇区<br>示例路 18 号</p><small>文字片段</small></article>
-<article data-fav="false"><div class="cap amber">备忘录<button class="pin" aria-label="收藏开票资料" aria-pressed="false">☆</button></div><strong>开票资料</strong><p>公司抬头与税号<br>报销时一起粘贴</p><small>文字片段</small></article>
-</div><span class="empty" hidden>没有匹配的记录。</span></div></div>
-<div class="caption"><span class="cursor">↖</span> 试试搜索与收藏<span aria-hidden="true"> / </span><a href="./assets/screenshots/feature-history.png">查看真实界面 ↗</a></div></div>
+<section class="hero" aria-labelledby="hero-heading">
+<div class="hero-copy wrap"><div class="hero-title"><p class="eyebrow">拾贴 · Mac 的随手备忘录</p>
+<h1 id="hero-heading">复制过的，<br><em>随时找回。</em></h1></div><div class="hero-action">
+<p class="lead">地址、链接、图片，复制过的都在手边。<br>常用内容收进收藏，下次直接用。</p>
+<a class="primary download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest"><svg class="download-icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" />
+</svg>
+<span>下载 Mac 版</span></a>
+<small>Apple Silicon · macOS 14+ <span aria-hidden="true">·</span> <a href="guide.html#start">安装指引 ↗</a></small>
+</div></div>
+<figure class="clipboard wrap" id="clipboard" data-scene="history" aria-label="自动演示复制历史、搜索和收藏功能">
+<div class="shelf-surface">
+<div class="shelf-toolbar"><img src="assets/brand/logo.svg" width="24" height="24" alt=""><span class="shelf-name">拾贴</span>
+<label class="shelf-search"><img src="assets/icons/search.svg" alt="" width="16" height="16"><input type="search" autocomplete="off" aria-label="搜索演示记录" placeholder="搜索文字、链接…"></label><span class="filter-label">历史</span></div>
+<div class="card-viewport"><div class="card-track">
+<article class="clip new-copy" data-content="周五 设计评审 会议 备忘录" data-id="meeting" data-pinned="false">
+<header class="cap amber"><img src="assets/apps/notes.png" alt="" width="26" height="26"><span>备忘录</span><button class="pin" aria-label="收藏设计评审" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
+<div class="clip-content"><span class="card-kicker"><img src="assets/icons/clock-3.svg" alt="" width="21" height="21"><span>周五 14:00</span></span><h3>周五，设计评审。</h3><p>会议室 302<br>把新方案带上。</p></div><footer><span>文字</span><span>刚刚</span></footer></article>
+<article class="clip address" data-content="收货地址 林小雨 上海市 浦东新区 示例路18号" data-id="address" data-pinned="false">
+<header class="cap teal"><img src="assets/apps/messages.png" alt="" width="26" height="26"><span>信息</span><button class="pin" aria-label="收藏收货地址" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
+<div class="clip-content"><span class="card-kicker"><img src="assets/icons/house.svg" alt="" width="21" height="21"><span>常用信息</span></span><h3>收货地址</h3><p>上海市浦东新区<br>示例路18号2单元301</p></div><footer><span>文字</span><span>1 分钟前</span></footer></article>
+<article class="clip link" data-content="网页 链接 Safari 设计 灵感 Design" data-id="link" data-pinned="false">
+<header class="cap blue"><img src="assets/apps/safari.png" alt="" width="26" height="26"><span>Safari</span><button class="pin" aria-label="收藏设计参考" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
+<div class="clip-content"><span class="card-kicker"><img src="assets/icons/link.svg" alt="" width="21" height="21"><span>灵感收藏</span></span><h3>下次继续看。</h3><p>设计参考<br><span class="url">example.com/design</span></p></div><footer><span>链接</span><span>3 分钟前</span></footer></article>
+<article class="clip photo" data-content="图片 预览 旅行 海边 灵感" data-id="photo" data-pinned="false">
+<header class="cap violet"><img src="assets/apps/preview.png" alt="" width="26" height="26"><span>预览</span><button class="pin" aria-label="收藏旅行图片" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
+<div class="clip-content"><img src="assets/images/coast.jpg" alt="白色海边小屋、蓝色门与远处的海湾，收藏的旅行参考图片" width="900" height="675"></div><footer><span>图片</span><span>5 分钟前</span></footer></article>
+</div></div>
+<div class="empty" hidden>没有匹配的记录，换个词试试。</div>
+</div>
+<figcaption><div class="demo-explanation"><span class="demo-caption">连续复制，前面的内容也都在。</span><span class="demo-mark">交互演示</span></div><div class="demo-top"><div class="scene-tabs" role="group" aria-label="切换演示场景">
+<button type="button" data-scene="history" aria-pressed="true">复制历史</button>
+<button type="button" data-scene="search" aria-pressed="false">搜索找回</button>
+<button type="button" data-scene="favorite" aria-pressed="false">收藏备忘</button></div>
+<button class="motion-toggle" data-pause-hero aria-label="暂停演示" title="暂停演示">Ⅱ</button></div></figcaption>
+</figure>
 </section>
-<section class="feature wrap" id="capture"><div class="copy"><span class="overline">截图识字</span><h2>图里的文字，<br>直接拿来用。</h2><p>框住取件通知里的单号，点「识字」，核对后就能复制。只想留图时，在选区旁直接复制或保存 PNG。</p><small>本机识别 · 快捷键可自定义</small></div><a class="shot" href="./capture-v025.jpg" aria-label="查看拾贴截图识字界面大图"><img loading="lazy" src="./capture-v025.jpg" width="1200" height="771" alt="拾贴中可调整的截图选区、浮动工具条和可编辑的文字结果"><span>查看实际界面 ↗</span></a></section>
-<section class="feature reverse wrap" id="organize"><div class="copy"><span class="overline">AI 整理</span><h2>几段群消息，<br>整理成一张表。</h2><p>选中工作群里的几条消息，用「工作待办」模板提取关键信息。核对、补充，再把整张表复制到你常用的文档里。</p><small>支持本机 Ollama · 可接入云端模型</small></div>
-<div class="flow"><div class="message">“小林周四前发初稿，小周周五确认印刷数量。”</div><div class="tablebox"><h3>工作待办 <span>整理示例</span></h3><table><thead><tr><th>事项</th><th>负责人</th><th>期限</th></tr></thead><tbody><tr><td>发送初稿</td><td>小林</td><td>周四前</td></tr><tr><td>确认印刷数量</td><td>小周</td><td>周五</td></tr></tbody></table></div></div></section>
-<section class="setup wrap" id="install"><div><span class="overline">安装与使用</span><h2>把拾贴装进 Mac。</h2><a class="primary download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest">免费下载 Mac 版 <b aria-hidden="true">↓</b></a><small class="spec">Apple Silicon · macOS 14 及以上</small></div>
-<div class="guide"><details open><summary>安装与首次使用</summary><p>打开 DMG，把拾贴拖到「应用程序」，从那里启动。复制两段文字，再按 ⇧⌘V，即可看到两条历史卡片。<a href="https://github.com/wlei24/sparepage-releases#安装与权限指引">完整安装指引 ↗</a></p></details><details><summary>快捷键与权限</summary><p>自动粘贴需要辅助功能权限，区域截图需要屏幕录制权限。默认截图快捷键 ⌘Z 会占用其他应用的撤销操作，可在拾贴设置中修改。</p></details><details><summary>内容保存与 AI 隐私</summary><p>剪贴板历史加密保存在本机，收藏会跳过普通历史的自动清理。可暂停记录或排除指定应用。使用云端 AI 时，确认后会将本次选中的原文和字段发送给你配置的服务。</p></details><details><summary>升级与数据迁移</summary><p>正常升级只需退出旧版并替换应用，历史和收藏都会保留。更换电脑前，可以在设置里导出加密备份。</p></details></div></section></main>
-<footer class="wrap"><span>拾贴 SparePage · Jeremy Wang</span><div><a href="https://github.com/wlei24/sparepage-releases">GitHub</a><a data-release-notes href="https://github.com/wlei24/sparepage-releases/releases/latest">版本说明</a><a href="./stats.html">下载统计</a><a href="https://github.com/wlei24/sparepage-releases/issues/new/choose">反馈</a></div></footer>
-<script src="./home-v025.js" defer></script><script src="./assets/js/release.js" defer></script></body></html>
+
+<section class="feature model-feature wrap" id="local-ai" aria-labelledby="ai-heading">
+<div class="section-heading"><p class="eyebrow">复制之外，还有本地 AI</p><h2 id="ai-heading">零散的消息，<span>有条理的清单。</span></h2><p class="ai-intro">朋友陆续发来的收货信息，选中后一起整理，省去逐条摘抄。</p></div>
+<figure class="am" aria-label="从收货消息整理出表格的动画演示">
+  <div class="am-scene">
+    <div class="am-messages">
+      <div class="am-pane-label"><span>聊天原文</span><span class="am-pane-detail">2 条消息</span></div>
+      <div class="am-message" data-am-message="0">
+        <span class="am-avatar" aria-hidden="true">林</span>
+        <p>我这边寄<span data-am-source="0-1">上海市浦东新区示例路18号2单元301</span>，写<span data-am-source="0-0">林小雨</span>。麻烦<span data-am-source="0-2">周末送到，我在家</span>。</p>
+      </div>
+      <div class="am-message" data-am-message="1">
+        <span class="am-avatar" aria-hidden="true">周</span>
+        <p><span data-am-source="1-0">周可可</span>收。寄<span data-am-source="1-1">深圳市南山区示例路9号</span>，<span data-am-source="1-2">到了放前台就行</span>。</p>
+      </div>
+    </div>
+    <div class="am-output">
+      <div class="am-pane-label"><span>收货清单</span><span class="am-output-status" aria-hidden="true">已整理</span></div>
+      <table>
+        <thead><tr><th scope="col">收件人</th><th scope="col">详细地址</th><th scope="col">备注</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row"><span data-am-cell="0-0">林小雨</span></th>
+            <td><span data-am-cell="0-1">上海市浦东新区<br>示例路18号2单元301</span></td>
+            <td><span data-am-cell="0-2">周末送到，我在家</span></td>
+          </tr>
+          <tr>
+            <th scope="row"><span data-am-cell="1-0">周可可</span></th>
+            <td><span data-am-cell="1-1">深圳市南山区<br>示例路9号</span></td>
+            <td><span data-am-cell="1-2">到了放前台就行</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="am-result"><span aria-hidden="true">✓</span> 已整理 2 条，可核对、修改和复制</div>
+    </div>
+  </div>
+  <figcaption class="am-caption">
+    <span>示例演示</span>
+    <button type="button" class="am-toggle" aria-label="播放整理演示" title="播放整理演示" hidden>
+      <span class="am-toggle-symbol" aria-hidden="true">▶</span>
+    </button>
+  </figcaption>
+</figure>
+<div class="ai-section-footer"><p><span class="ai-local-icon" aria-hidden="true">✓</span> 在你的 Mac 上处理，原文留在本机。</p><a href="guide.html#local-model">跟着指引，接好本地模型</a></div>
+</section>
+
+<section class="capture wrap feature" id="capture">
+<div class="capture-copy"><p class="eyebrow">随手截下 · 按需识字</p><h2>截下来，<br>文字也能拿来用。</h2><p>拍下快递面单，框选运单号，一键提取文字。<br>图片里的信息，也能直接复制使用。</p></div>
+<figure class="capture-demo ocr-demo" data-ocr aria-label="截图、识字与复制的操作演示">
+<div class="ocr-window"><div class="ocr-window-bar"><img src="assets/apps/preview.png" width="20" height="20" alt=""><span>快递面单.jpg</span><span class="ocr-photo-tag">照片预览</span></div>
+<div class="ocr-photo"><img src="assets/images/waybill-photo.png" width="1448" height="1086" alt="示例照片：纸箱上的快递面单，运单号 SP 0318 2607"><span class="ocr-number" aria-hidden="true"><span></span><span></span><span></span></span></div></div>
+<div class="ocr-dim" aria-hidden="true"></div><div class="ocr-selection" aria-hidden="true"><i></i><i></i><i></i><i></i><div class="ocr-scanline"></div></div>
+<div class="ocr-toolbar" aria-hidden="true"><img src="assets/icons/crop.svg" alt=""><span class="ocr-tool"><img src="assets/icons/scan-text.svg" alt=""><span class="ocr-tip">识字</span></span><img src="assets/icons/download.svg" alt=""><img src="assets/icons/check.svg" alt=""></div>
+<div class="ocr-result"><div class="ocr-result-title"><img src="assets/icons/scan-text.svg" width="15" height="15" alt=""><span>识别结果</span><span class="ocr-local">本机识别</span></div><div class="ocr-result-line"><strong><span>SP</span> <span>0318</span> <span>2607</span></strong><button class="ocr-copy" type="button" title="复制演示中的运单号" aria-label="复制演示中的运单号"><img src="assets/icons/copy.svg" width="17" height="17" alt=""></button></div><span class="ocr-copy-feedback" role="status"></span></div>
+<div class="ocr-pointer" aria-hidden="true"><img src="assets/icons/mouse-pointer-2.svg" width="25" height="25" alt=""><span></span></div>
+<figcaption><span class="ocr-step">框选屏幕上的内容</span><span class="ocr-demo-label">示例照片 · 操作演示</span></figcaption><button class="motion-toggle ocr-toggle" type="button" aria-label="暂停操作演示" title="暂停操作演示">Ⅱ</button>
+</figure></section>
+<section class="closing wrap"><div class="closing-message"><img src="assets/brand/logo.svg" alt="" width="50" height="50"><h2>每一次复制，<br>都值得被记住。</h2></div><a class="primary download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest"><svg class="download-icon" aria-hidden="true" focusable="false"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 15V3" />
+  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+  <path d="m7 10 5 5 5-5" />
+</svg>
+<span>下载 Mac 版</span></a></section>
+</main>
+<footer class="wrap foot"><span>拾贴 SparePage · Jeremy Wang</span><div><a href="guide.html">使用指南</a><a href="https://github.com/wlei24/sparepage-releases">GitHub</a><a data-release-notes href="https://github.com/wlei24/sparepage-releases/releases/latest">版本说明</a></div></footer>
+</body></html>

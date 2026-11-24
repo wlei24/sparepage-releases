@@ -10,6 +10,14 @@ Clipboard Manager for macOS · 免费 macOS 工具 · 开发者 Jeremy Wang
 
 > **系统要求：Apple Silicon Mac（M 系列芯片），macOS 14 或更新版本。** 当前不提供 Intel 安装包。正式版尚未经过 Apple Developer ID 签名与公证，首次打开或升级时可能需要由你确认系统提示。
 
+## 官网更新 · 2026-11-24
+
+官网新增复制历史与收藏、本地 AI 整理、面单截图识字的交互演示，并提供安装、权限和模型接入指引。
+
+[浏览产品官网](https://wlei24.github.io/sparepage-releases/) · [查看使用指南](https://wlei24.github.io/sparepage-releases/guide.html)
+
+应用当前正式版本仍为 **v0.2.5**。本次更新官网展示，不改变安装包或已有用户数据。
+
 ## 从 v0.2.4 到 v0.2.5
 
 - **区域截图。** 框选后可移动和调整大小，在选区旁复制图片或保存 PNG。悬停图标可看操作说明。

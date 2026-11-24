@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="从复制、收藏到截图识字，再到连接本地 AI。跟随拾贴使用指南，让重要内容随手可用。">
+  <title>使用指南 · 拾贴 SparePage</title>
+  <link rel="icon" href="assets/brand/logo.svg">
+  <link rel="stylesheet" href="assets/css/guide.css?v=9">
+  <script src="assets/js/release.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#guide-content">跳到使用指南</a>
+<header class="mast">
+  <nav class="wrap nav" aria-label="主导航">
+    <a class="brand" href="index.html"><img src="assets/brand/logo.svg" alt="" width="35" height="35"><strong>拾贴</strong><span>SparePage</span></a>
+    <a class="back" href="index.html"><span aria-hidden="true">←</span> 返回首页</a>
+    <a class="nav-download download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest">下载 Mac 版</a>
+  </nav>
+</header>
+<div class="wrap guide-layout">
+  <aside class="contents" aria-label="指南目录">
+    <p class="contents-label">使用指南</p>
+    <nav aria-label="本页目录">
+      <a href="#start"><span>01</span>开始使用</a>
+      <a href="#local-model"><span>02</span>接入 AI</a>
+      <a href="#capture"><span>03</span>截图与识字</a>
+      <a href="#history"><span>04</span>历史和收藏</a>
+    </nav>
+    <p class="contents-note">从一次复制，<br>开始积攒你的随手备忘。</p>
+  </aside>
+  <main id="guide-content">
+    <header class="page-intro">
+      <p class="eyebrow">GET STARTED</p>
+      <h1>让拾贴，<br class="mobile-break">顺手起来。</h1>
+      <p>从复制、收藏开始。需要时，再接上 AI。</p>
+    </header>
+    <section class="guide-section" id="start" aria-labelledby="start-heading">
+      <div class="section-title"><span class="section-number">01</span><h2 id="start-heading">开始使用</h2><img class="section-app" src="assets/brand/logo.svg" alt="" width="36" height="36"></div>
+      <ol class="steps">
+        <li><span class="step-number" aria-hidden="true">1</span><div><h3>装好拾贴，复制一条内容</h3><p>打开安装包，将拾贴拖进「应用程序」并启动。连续复制地址和电话，再从菜单栏打开拾贴，就会看到两张历史卡片。</p><div class="install-path" aria-label="将拾贴拖入应用程序"><img src="assets/brand/logo.svg" alt="拾贴" width="32" height="32"><span>拾贴</span><span class="path-arrow" aria-hidden="true">→</span><img src="assets/apps/finder.png" alt="" width="32" height="32"><span>应用程序</span></div></div></li>
+        <li><span class="step-number" aria-hidden="true">2</span><div><h3>双击填入，下次接着用</h3><p>把光标放回收货地址栏，用设置中的快捷键唤出拾贴，双击地址卡片即可填入。鼠标移到卡片上，点标题栏的图钉即可收藏。</p><p class="permission-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5c0 4.5 3 7.6 7.5 10 4.5-2.4 7.5-5.5 7.5-10V6L12 3Z"/><path d="m8.5 12 2.3 2.3 4.7-4.7"/></svg><span>自动粘贴需开启「系统设置 → 隐私与安全性 → 辅助功能 → 拾贴」。</span></p></div></li>
+      </ol>
+      <details class="visual-details"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18m-12 0v10m6-10v10"/></svg><span>看看历史与收藏的样子</span><span class="detail-plus" aria-hidden="true">+</span></summary><div class="details-body"><figure><a href="assets/screenshots/native-history.png"><img src="assets/screenshots/native-history.png" alt="历史面板中同时保留电话卡和上一条地址卡" loading="lazy" width="1500" height="660"></a><figcaption>连续复制，地址和电话都留在历史里。</figcaption></figure><figure><a href="assets/screenshots/native-favorites.png"><img src="assets/screenshots/native-favorites.png" alt="收藏面板中保存的地址卡" loading="lazy" width="1500" height="660"></a><figcaption>给常用内容点个图钉，下次从收藏里找到。</figcaption></figure></div></details>
+    </section>
+    <section class="guide-section" id="local-model" aria-labelledby="model-heading">
+      <div class="section-title"><span class="section-number">02</span><h2 id="model-heading">接入 AI</h2><span class="section-tag">本地 / 云端</span></div>
+      <p class="section-lead">先试试本地模型。在「更多功能 → 接入 AI」选择「在这台 Mac 上运行」。</p>
+      <ol class="steps model-steps">
+        <li><span class="step-number" aria-hidden="true">1</span><div><h3>打开 Ollama</h3><p>第一次用，点向导里的下载按钮并安装。已经装好，直接点「打开 Ollama」，再检测连接。</p></div></li>
+        <li><span class="step-number" aria-hidden="true">2</span><div><h3>下载模型</h3><p>点「填入终端」，核对下面的命令后按回车。</p><div class="command"><code id="model-command">ollama pull qwen3.5:4b</code><button type="button" id="copy-command" aria-label="复制模型下载命令"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg><span>复制</span></button></div><p class="command-feedback" id="copy-feedback" role="status" aria-live="polite"></p><p>看到 <code>success</code>，回拾贴刷新模型并选中它。</p></div></li>
+        <li><span class="step-number" aria-hidden="true">3</span><div><h3>测试并保存</h3><p>点「发送测试问候」。收到回复后选「保存并设为默认」，就可以在「整理信息」里试用。</p></div></li>
+      </ol>
+      <div class="model-choice">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M12 16v5m-4 0h8"/></svg><h3>选择本机模型</h3><p>选中的原文在这台 Mac 上处理。</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 18a4.5 4.5 0 0 1-.6-9 6.5 6.5 0 0 1 12.4-1A5 5 0 0 1 18 18H6.5Z"/></svg><h3>也可以连接云端</h3><p>确认后，将所选原文、字段和候选结果发送至该服务。</p></div>
+      </div>
+      <details class="visual-details" id="cloud-model"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 18a4.5 4.5 0 0 1-.6-9 6.5 6.5 0 0 1 12.4-1A5 5 0 0 1 18 18H6.5Z"/></svg><span>已有云端模型？查看连接步骤</span><span class="detail-plus" aria-hidden="true">+</span></summary><div class="details-body"><ol class="steps">
+        <li><span class="step-number" aria-hidden="true">1</span><div><h3>选择连接云端模型</h3><p>打开「更多功能 → 接入 AI」，选择「连接云端模型」。</p></div></li>
+        <li><span class="step-number" aria-hidden="true">2</span><div><h3>填入服务方提供的信息</h3><p>按服务方说明选择 OpenAI 兼容或 Claude 格式，再填写服务地址、API 密钥和模型名称。服务地址可填 Base URL 或完整接口地址，请从 API 接入文档复制。</p></div></li>
+        <li><span class="step-number" aria-hidden="true">3</span><div><h3>测试连接，保存后使用</h3><p>点「发送测试问候」，收到回复后选「保存并设为默认」。云端调用可能按服务方规则计费。</p></div></li>
+      </ol></div></details>
+      <details class="visual-details"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18m-18 6h18M9 3v18"/></svg><span>试一次：把收货信息整理成清单</span><span class="detail-plus" aria-hidden="true">+</span></summary><div class="details-body"><p>选「收货地址」模板，勾选每位朋友各自的一条消息，点「AI 整理」。如需模型处理，先确认发送内容，再点「继续整理」。有不同结果时，对照原话选定详细地址，最后点「核对并复制」。</p><figure><a href="assets/screenshots/native-addresses.png"><img src="assets/screenshots/native-addresses.png" loading="lazy" alt="用本次实测结果复现的原生界面，两条收货信息分列展示，电话均已遮盖" width="2360" height="1130"></a><figcaption>来自两位朋友的收货信息，核对后即可复制到表格。</figcaption></figure></div></details>
+    </section>
+    <section class="guide-section" id="capture" aria-labelledby="capture-heading">
+      <div class="section-title"><span class="section-number">03</span><h2 id="capture-heading">截图与识字</h2><img class="section-app" src="assets/apps/preview.png" alt="" width="36" height="36"></div>
+      <p>用设置中的截图快捷键框选区域，在选区旁复制或保存图片。需要文字时点「识字」。首次区域截图，按系统提示开启屏幕录制权限。</p>
+      <details class="visual-details"><summary><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H4a1 1 0 0 0-1 1v4m13-5h4a1 1 0 0 1 1 1v4M3 16v4a1 1 0 0 0 1 1h4m8 0h4a1 1 0 0 0 1-1v-4M8 8h8m-4 0v8m-3 0h6"/></svg><span>查看识字界面</span><span class="detail-plus" aria-hidden="true">+</span></summary><div class="details-body"><figure><a href="assets/images/capture.jpg"><img src="assets/images/capture.jpg" alt="截图选区旁的工具栏，可按需选择识字" loading="lazy" width="1200" height="771"></a></figure></div></details>
+    </section>
+    <section class="guide-section" id="history" aria-labelledby="history-heading">
+      <div class="section-title"><span class="section-number">04</span><h2 id="history-heading">历史和收藏</h2></div>
+      <div class="retention"><div><h3>历史，留在这台 Mac</h3><p>历史加密保存在本机，按设置的天数和条数清理。</p></div><div><h3>收藏，留住常用内容</h3><p>收藏会跳过这项自动清理，常用内容随时可取。</p></div></div>
+      <p class="settings-note">在设置里，还可以暂停记录、排除应用，或导出加密备份。</p>
+    </section>
+    <div class="guide-end"><img src="assets/brand/logo.svg" alt="" width="42" height="42"><div><strong>准备好了，就从一次复制开始。</strong><a class="download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest">免费下载 Mac 版 <span aria-hidden="true">↗</span></a></div></div>
+  </main>
+</div>
+<footer class="wrap foot"><span>拾贴 SparePage · Jeremy Wang</span><div><a href="index.html">返回首页</a><a href="https://wlei24.github.io/sparepage-releases/stats.html">下载统计</a><a data-release-notes href="https://github.com/wlei24/sparepage-releases/releases/latest">版本说明</a></div></footer>
+<script>
+  const copyButton = document.getElementById('copy-command');
+  const copyFeedback = document.getElementById('copy-feedback');
+  copyButton.addEventListener('click', async () => {
+    copyButton.querySelector('span').textContent = '复制';
+    try {
+      await navigator.clipboard.writeText('ollama pull qwen3.5:4b');
+      copyButton.querySelector('span').textContent = '已复制';
+      copyFeedback.textContent = '已复制，在终端粘贴后按回车。';
+    } catch {
+      copyFeedback.textContent = '浏览器未允许复制，请选中上方命令手动复制。';
+    }
+  });
+</script>
+</body>
+</html>
