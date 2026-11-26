@@ -1,158 +1,820 @@
-<!doctype html>
-<html lang="zh-CN"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>拾贴 SparePage · 每一次复制，都值得被记住</title>
-<meta name="description" content="拾贴是一款免费的 Mac 剪贴板与随手备忘录。找回复制过的文字、链接、图片，收藏常用内容，也能接入本地 AI 整理信息。">
-<meta name="theme-color" content="#ffffff">
-<link rel="icon" href="assets/brand/logo.svg"><link rel="stylesheet" href="assets/css/ai-motion.css?v=9"><link rel="stylesheet" href="assets/css/landing-v9.css?v=13">
-<script src="assets/js/landing.js?v=10" defer></script><script src="assets/js/ai-motion.js?v=9" defer></script><script src="assets/js/ocr-motion.js?v=11" defer></script><script src="assets/js/release.js" defer></script>
-<link rel="stylesheet" href="assets/css/ocr-motion.css?v=11">
-<link rel="stylesheet" href="assets/css/ai-section.css?v=12">
-</head><body>
-<a class="skip" href="#main">跳到正文</a>
-<header class="wrap"><nav aria-label="主导航">
-<a class="brand" href="#main"><img src="assets/brand/logo.svg" alt="" width="34" height="34"><strong>拾贴</strong><span>SparePage</span></a>
-<div class="nav-links"><a href="#clipboard">剪贴备忘</a><a href="#local-ai">本地 AI</a><a href="guide.html">使用指南</a></div>
-<a class="nav-download download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest"><svg class="download-icon" aria-hidden="true" focusable="false"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M12 15V3" />
-  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-  <path d="m7 10 5 5 5-5" />
-</svg>
-<span>下载 Mac 版</span></a>
-</nav></header>
-<main id="main">
-<section class="hero" aria-labelledby="hero-heading">
-<div class="hero-copy wrap"><div class="hero-title"><p class="eyebrow">拾贴 · Mac 的随手备忘录</p>
-<h1 id="hero-heading">复制过的，<br><em>随时找回。</em></h1></div><div class="hero-action">
-<p class="lead">地址、链接、图片，复制过的都在手边。<br>常用内容收进收藏，下次直接用。</p>
-<a class="primary download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest"><svg class="download-icon" aria-hidden="true" focusable="false"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M12 15V3" />
-  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-  <path d="m7 10 5 5 5-5" />
-</svg>
-<span>下载 Mac 版</span></a>
-<small>Apple Silicon · macOS 14+ <span aria-hidden="true">·</span> <a href="guide.html#start">安装指引 ↗</a></small>
-</div></div>
-<figure class="clipboard wrap" id="clipboard" data-scene="history" aria-label="自动演示复制历史、搜索和收藏功能">
-<div class="shelf-surface">
-<div class="shelf-toolbar"><img src="assets/brand/logo.svg" width="24" height="24" alt=""><span class="shelf-name">拾贴</span>
-<label class="shelf-search"><img src="assets/icons/search.svg" alt="" width="16" height="16"><input type="search" autocomplete="off" aria-label="搜索演示记录" placeholder="搜索文字、链接…"></label><span class="filter-label">历史</span></div>
-<div class="card-viewport"><div class="card-track">
-<article class="clip new-copy" data-content="周五 设计评审 会议 备忘录" data-id="meeting" data-pinned="false">
-<header class="cap amber"><img src="assets/apps/notes.png" alt="" width="26" height="26"><span>备忘录</span><button class="pin" aria-label="收藏设计评审" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
-<div class="clip-content"><span class="card-kicker"><img src="assets/icons/clock-3.svg" alt="" width="21" height="21"><span>周五 14:00</span></span><h3>周五，设计评审。</h3><p>会议室 302<br>把新方案带上。</p></div><footer><span>文字</span><span>刚刚</span></footer></article>
-<article class="clip address" data-content="收货地址 林小雨 上海市 浦东新区 示例路18号" data-id="address" data-pinned="false">
-<header class="cap teal"><img src="assets/apps/messages.png" alt="" width="26" height="26"><span>信息</span><button class="pin" aria-label="收藏收货地址" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
-<div class="clip-content"><span class="card-kicker"><img src="assets/icons/house.svg" alt="" width="21" height="21"><span>常用信息</span></span><h3>收货地址</h3><p>上海市浦东新区<br>示例路18号2单元301</p></div><footer><span>文字</span><span>1 分钟前</span></footer></article>
-<article class="clip link" data-content="网页 链接 Safari 设计 灵感 Design" data-id="link" data-pinned="false">
-<header class="cap blue"><img src="assets/apps/safari.png" alt="" width="26" height="26"><span>Safari</span><button class="pin" aria-label="收藏设计参考" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
-<div class="clip-content"><span class="card-kicker"><img src="assets/icons/link.svg" alt="" width="21" height="21"><span>灵感收藏</span></span><h3>下次继续看。</h3><p>设计参考<br><span class="url">example.com/design</span></p></div><footer><span>链接</span><span>3 分钟前</span></footer></article>
-<article class="clip photo" data-content="图片 预览 旅行 海边 灵感" data-id="photo" data-pinned="false">
-<header class="cap violet"><img src="assets/apps/preview.png" alt="" width="26" height="26"><span>预览</span><button class="pin" aria-label="收藏旅行图片" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6 3 4v2h-5v6l-1 2-1-2v-6H6v-2l3-4z"/></svg></button></header>
-<div class="clip-content"><img src="assets/images/coast.jpg" alt="白色海边小屋、蓝色门与远处的海湾，收藏的旅行参考图片" width="900" height="675"></div><footer><span>图片</span><span>5 分钟前</span></footer></article>
-</div></div>
-<div class="empty" hidden>没有匹配的记录，换个词试试。</div>
-</div>
-<figcaption><div class="demo-explanation"><span class="demo-caption">连续复制，前面的内容也都在。</span><span class="demo-mark">交互演示</span></div><div class="demo-top"><div class="scene-tabs" role="group" aria-label="切换演示场景">
-<button type="button" data-scene="history" aria-pressed="true">复制历史</button>
-<button type="button" data-scene="search" aria-pressed="false">搜索找回</button>
-<button type="button" data-scene="favorite" aria-pressed="false">收藏备忘</button></div>
-<button class="motion-toggle" data-pause-hero aria-label="暂停演示" title="暂停演示">Ⅱ</button></div></figcaption>
-</figure>
-</section>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>拾贴 SparePage · 每一次复制，都值得被记住</title>
+  <meta
+    name="description"
+    content="拾贴是一款免费的 Mac 剪贴板与随手备忘录。找回复制过的文字、链接、图片，收藏常用内容，也能接入本地 AI 整理信息。"
+  />
+  <link rel="icon" type="image/svg+xml" href="assets/brand/logo.svg" />
+  <link rel="stylesheet" href="styles.css?v=14" />
+</head>
+<body>
+  <!-- Floating Frosted Pill Header -> Full-Width Docked Bar on Scroll -->
+  <header class="site-header" id="site-header">
+    <div class="nav-pill">
+      <div class="nav-pill-inner">
+        <a href="#main" class="brand">
+          <span class="brand-icon" aria-hidden="true">
+            <img src="assets/brand/logo.svg" alt="" width="28" height="28" />
+          </span>
+          <span class="brand-text">
+            <strong>拾贴</strong>
+            <span>SparePage</span>
+          </span>
+        </a>
 
-<section class="feature model-feature wrap" id="local-ai" aria-labelledby="ai-heading">
-<div class="section-heading"><p class="eyebrow">复制之外，还有本地 AI</p><h2 id="ai-heading">零散的消息，<span>有条理的清单。</span></h2><p class="ai-intro">朋友陆续发来的收货信息，选中后一起整理，省去逐条摘抄。</p></div>
-<figure class="am" aria-label="从收货消息整理出表格的动画演示">
-  <div class="am-scene">
-    <div class="am-messages">
-      <div class="am-pane-label"><span>聊天原文</span><span class="am-pane-detail">2 条消息</span></div>
-      <div class="am-message" data-am-message="0">
-        <span class="am-avatar" aria-hidden="true">林</span>
-        <p>我这边寄<span data-am-source="0-1">上海市浦东新区示例路18号2单元301</span>，写<span data-am-source="0-0">林小雨</span>。麻烦<span data-am-source="0-2">周末送到，我在家</span>。</p>
-      </div>
-      <div class="am-message" data-am-message="1">
-        <span class="am-avatar" aria-hidden="true">周</span>
-        <p><span data-am-source="1-0">周可可</span>收。寄<span data-am-source="1-1">深圳市南山区示例路9号</span>，<span data-am-source="1-2">到了放前台就行</span>。</p>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="#clipboard" class="is-active">剪贴备忘</a>
+          <a href="#local-ai">本地 AI</a>
+          <a href="#capture">识字截屏</a>
+          <a href="#faq">常见问题</a>
+          <span class="nav-sep" aria-hidden="true"></span>
+          <a class="nav-ext" href="guide.html" target="_blank" rel="noopener">
+            <span>使用指南</span>
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="7" y1="17" x2="17" y2="7" />
+              <polyline points="7 7 17 7 17 17" />
+            </svg>
+          </a>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            class="btn-nav-download download-link"
+            href="https://github.com/wlei24/sparepage-releases/releases/download/v0.2.5/SparePage-0.2.5-macOS-arm64.dmg"
+            aria-label="下载拾贴 v0.2.5，Apple Silicon macOS 安装包"
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>下载 Mac 版</span>
+          </a>
+        </div>
       </div>
     </div>
-    <div class="am-output">
-      <div class="am-pane-label"><span>收货清单</span><span class="am-output-status" aria-hidden="true">已整理</span></div>
-      <table>
-        <thead><tr><th scope="col">收件人</th><th scope="col">详细地址</th><th scope="col">备注</th></tr></thead>
-        <tbody>
-          <tr>
-            <th scope="row"><span data-am-cell="0-0">林小雨</span></th>
-            <td><span data-am-cell="0-1">上海市浦东新区<br>示例路18号2单元301</span></td>
-            <td><span data-am-cell="0-2">周末送到，我在家</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><span data-am-cell="1-0">周可可</span></th>
-            <td><span data-am-cell="1-1">深圳市南山区<br>示例路9号</span></td>
-            <td><span data-am-cell="1-2">到了放前台就行</span></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="am-result"><span aria-hidden="true">✓</span> 已整理 2 条，可核对、修改和复制</div>
-    </div>
-  </div>
-  <figcaption class="am-caption">
-    <span>示例演示</span>
-    <button type="button" class="am-toggle" aria-label="播放整理演示" title="播放整理演示" hidden>
-      <span class="am-toggle-symbol" aria-hidden="true">▶</span>
-    </button>
-  </figcaption>
-</figure>
-<div class="ai-section-footer"><p><span class="ai-local-icon" aria-hidden="true">✓</span> 在你的 Mac 上处理，原文留在本机。</p><a href="guide.html#local-model">跟着指引，接好本地模型</a></div>
-</section>
+  </header>
 
-<section class="capture wrap feature" id="capture">
-<div class="capture-copy"><p class="eyebrow">随手截下 · 按需识字</p><h2>截下来，<br>文字也能拿来用。</h2><p>拍下快递面单，框选运单号，一键提取文字。<br>图片里的信息，也能直接复制使用。</p></div>
-<figure class="capture-demo ocr-demo" data-ocr aria-label="截图、识字与复制的操作演示">
-<div class="ocr-window"><div class="ocr-window-bar"><img src="assets/apps/preview.png" width="20" height="20" alt=""><span>快递面单.jpg</span><span class="ocr-photo-tag">照片预览</span></div>
-<div class="ocr-photo"><img src="assets/images/waybill-photo.png" width="1448" height="1086" alt="示例照片：纸箱上的快递面单，运单号 SP 0318 2607"><span class="ocr-number" aria-hidden="true"><span></span><span></span><span></span></span></div></div>
-<div class="ocr-dim" aria-hidden="true"></div><div class="ocr-selection" aria-hidden="true"><i></i><i></i><i></i><i></i><div class="ocr-scanline"></div></div>
-<div class="ocr-toolbar" aria-hidden="true"><img src="assets/icons/crop.svg" alt=""><span class="ocr-tool"><img src="assets/icons/scan-text.svg" alt=""><span class="ocr-tip">识字</span></span><img src="assets/icons/download.svg" alt=""><img src="assets/icons/check.svg" alt=""></div>
-<div class="ocr-result"><div class="ocr-result-title"><img src="assets/icons/scan-text.svg" width="15" height="15" alt=""><span>识别结果</span><span class="ocr-local">本机识别</span></div><div class="ocr-result-line"><strong><span>SP</span> <span>0318</span> <span>2607</span></strong><button class="ocr-copy" type="button" title="复制演示中的运单号" aria-label="复制演示中的运单号"><img src="assets/icons/copy.svg" width="17" height="17" alt=""></button></div><span class="ocr-copy-feedback" role="status"></span></div>
-<div class="ocr-pointer" aria-hidden="true"><img src="assets/icons/mouse-pointer-2.svg" width="25" height="25" alt=""><span></span></div>
-<figcaption><span class="ocr-step">框选屏幕上的内容</span><span class="ocr-demo-label">示例照片 · 操作演示</span></figcaption><button class="motion-toggle ocr-toggle" type="button" aria-label="暂停操作演示" title="暂停操作演示">Ⅱ</button>
-</figure></section>
-<section class="closing wrap"><div class="closing-message"><img src="assets/brand/logo.svg" alt="" width="50" height="50"><h2>每一次复制，<br>都值得被记住。</h2></div><a class="primary download-link" href="https://github.com/wlei24/sparepage-releases/releases/latest"><svg class="download-icon" aria-hidden="true" focusable="false"
-  xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
->
-  <path d="M12 15V3" />
-  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-  <path d="m7 10 5 5 5-5" />
-</svg>
-<span>下载 Mac 版</span></a></section>
-</main>
-<footer class="wrap foot"><span>拾贴 SparePage · Jeremy Wang</span><div><a href="guide.html">使用指南</a><a href="https://github.com/wlei24/sparepage-releases">GitHub</a><a data-release-notes href="https://github.com/wlei24/sparepage-releases/releases/latest">版本说明</a></div></footer>
-</body></html>
+  <main id="main">
+    <!-- Hero + macOS Desktop Stage -->
+    <section class="hero" id="clipboard">
+      <div class="container">
+        <div class="hero-copy">
+          <div class="hero-spec">
+            <span class="spec-dot" aria-hidden="true"></span>
+            <span class="mono" data-release-version>v0.2.5</span>
+            <span class="sep">·</span>
+            <span>Apple Silicon</span>
+            <span class="sep">·</span>
+            <span>macOS 14+</span>
+          </div>
+
+          <h1 class="hero-title">复制过的，<br class="mobile-br" /><span class="title-accent">随时找回。</span></h1>
+
+          <p class="hero-lead">剪贴历史、常用收藏、截屏识字，还有本地 AI 整理。</p>
+
+          <div class="hero-cta-group">
+            <a
+              class="btn-primary download-link"
+              href="https://github.com/wlei24/sparepage-releases/releases/download/v0.2.5/SparePage-0.2.5-macOS-arm64.dmg"
+              aria-label="下载拾贴 v0.2.5，Apple Silicon macOS 安装包"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>免费下载 Mac 版</span>
+              <span class="btn-ext mono">.dmg</span>
+            </a>
+
+            <a
+              class="btn-secondary"
+              href="guide.html#start"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>安装指引</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span>完全免费</span>
+            <span class="sep">·</span>
+            <span>无需登录</span>
+            <span class="sep">·</span>
+            <span>纯本机运行</span>
+            <span class="sep desktop-only">·</span>
+            <span class="key-callout desktop-only">
+              <kbd>⌘</kbd><kbd>⇧</kbd><kbd>V</kbd>
+              <span>随时呼出</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Realistic macOS Desktop Wallpaper + Menu Bar Stage -->
+        <div class="desktop-stage">
+          <div class="mac-menubar" aria-hidden="true">
+            <div class="menubar-left">
+              <span class="apple-mark"></span>
+              <strong>访达</strong>
+              <span>文件</span>
+              <span>编辑</span>
+              <span>显示</span>
+            </div>
+            <div class="menubar-right">
+              <span class="menubar-app">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+                  <rect x="5" y="4" width="14" height="16" rx="3" stroke="currentColor" stroke-width="2" />
+                  <path d="M9 10h6M9 14h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <span class="mono">⌘⇧V</span>
+              </span>
+              <span class="menubar-time mono">周四 09:42</span>
+            </div>
+          </div>
+
+          <!-- SparePage App Shelf Window -->
+          <div class="mac-window">
+            <div class="mac-titlebar">
+              <div class="titlebar-left">
+                <div class="traffic-lights" aria-hidden="true">
+                  <span class="tl red"></span>
+                  <span class="tl yellow"></span>
+                  <span class="tl green"></span>
+                </div>
+                <span class="titlebar-sep" aria-hidden="true"></span>
+                <div class="window-brand">
+                  <span class="mini-logo" aria-hidden="true">
+                    <img src="assets/brand/logo.svg" alt="" width="20" height="20" />
+                  </span>
+                  <span>拾贴</span>
+                </div>
+              </div>
+
+              <label class="search-field">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input
+                  id="shelf-search"
+                  type="text"
+                  placeholder="搜索文字、链接、应用…"
+                  autocomplete="off"
+                />
+                <kbd class="kbd-hint">⌘F</kbd>
+              </label>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="shelf-stage">
+              <div class="shelf-grid" id="shelf-grid">
+                <!-- Card 1 -->
+                <article class="clip-card" tabindex="0" data-id="addr" data-copy="上海市浦东新区示例路18号2单元301" data-keywords="收货地址 信息 常用信息 上海市浦东新区示例路18号2单元301 地址" data-pinned="false">
+                  <div class="clip-card-head">
+                    <div class="app-pill">
+                      <span class="app-dot messages" aria-hidden="true">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 3C6.48 3 2 6.82 2 11.5c0 2.58 1.38 4.89 3.56 6.44-.18 1.29-.77 2.53-1.45 3.31-.21.24-.03.62.28.58 1.93-.24 3.79-.98 4.97-1.63.84.2 1.72.3 2.64.3 5.52 0 10-3.82 10-8.5S17.52 3 12 3z"/>
+                        </svg>
+                      </span>
+                      <span>信息</span>
+                    </div>
+                    <div class="card-actions">
+                      <kbd class="card-shortcut">⌘1</kbd>
+                      <button class="pin-btn" type="button" aria-label="收藏此卡片" title="收藏">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 17v5" />
+                          <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clip-card-body">
+                    <div class="clip-sub">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                      </svg>
+                      <span>常用信息</span>
+                    </div>
+                    <h3>收货地址</h3>
+                    <p class="clip-text">上海市浦东新区<br />示例路18号2单元301</p>
+                  </div>
+                  <div class="clip-card-foot">
+                    <span class="type-tag mono">文字 · 19字</span>
+                    <span class="copy-hint">点击复制</span>
+                    <span class="time-tag">刚刚</span>
+                  </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="clip-card" tabindex="0" data-id="memo" data-copy="周五 14:00 会议室 302 设计评审，把新方案带上。" data-keywords="周五 设计评审 会议室 302 把新方案带上 备忘录" data-pinned="true">
+                  <div class="clip-card-head">
+                    <div class="app-pill">
+                      <span class="app-dot notes" aria-hidden="true">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                          <rect x="4" y="4" width="16" height="16" rx="3" />
+                          <path d="M4 9h16" />
+                        </svg>
+                      </span>
+                      <span>备忘录</span>
+                    </div>
+                    <div class="card-actions">
+                      <kbd class="card-shortcut">⌘2</kbd>
+                      <button class="pin-btn is-pinned" type="button" aria-label="取消收藏" title="已收藏">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 17v5" />
+                          <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clip-card-body">
+                    <div class="clip-sub">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                      </svg>
+                      <span>周五 14:00</span>
+                    </div>
+                    <h3>周五，设计评审。</h3>
+                    <p class="clip-text">会议室 302<br />把新方案带上。</p>
+                  </div>
+                  <div class="clip-card-foot">
+                    <span class="type-tag mono">文字 · 18字</span>
+                    <span class="copy-hint">点击复制</span>
+                    <span class="time-tag">刚刚</span>
+                  </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="clip-card" tabindex="0" data-id="link" data-copy="https://example.com/design" data-keywords="Safari 灵感收藏 下次继续看 设计参考 example.com/design 链接" data-pinned="false">
+                  <div class="clip-card-head">
+                    <div class="app-pill">
+                      <span class="app-dot safari" aria-hidden="true">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                          <circle cx="12" cy="12" r="9" />
+                          <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor" />
+                        </svg>
+                      </span>
+                      <span>Safari</span>
+                    </div>
+                    <div class="card-actions">
+                      <kbd class="card-shortcut">⌘3</kbd>
+                      <button class="pin-btn" type="button" aria-label="收藏此卡片" title="收藏">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 17v5" />
+                          <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clip-card-body">
+                    <div class="clip-sub">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                      </svg>
+                      <span>灵感收藏</span>
+                    </div>
+                    <h3>下次继续看。</h3>
+                    <p class="clip-text">设计参考<br /><span class="link-domain">example.com/design</span></p>
+                  </div>
+                  <div class="clip-card-foot">
+                    <span class="type-tag mono">链接 · HTTPS</span>
+                    <span class="copy-hint">点击复制</span>
+                    <span class="time-tag">3 分钟前</span>
+                  </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="clip-card" tabindex="0" data-id="photo" data-copy="coast.jpg" data-keywords="预览 图片 海岸 旅行 照片 coast.jpg" data-pinned="true">
+                  <div class="clip-card-head">
+                    <div class="app-pill">
+                      <span class="app-dot preview" aria-hidden="true">
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                          <rect x="3" y="3" width="18" height="18" rx="3" />
+                          <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" />
+                          <path d="m21 15-5-5L5 21" />
+                        </svg>
+                      </span>
+                      <span>预览</span>
+                    </div>
+                    <div class="card-actions">
+                      <kbd class="card-shortcut">⌘4</kbd>
+                      <button class="pin-btn is-pinned" type="button" aria-label="取消收藏" title="已收藏">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 17v5" />
+                          <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="clip-card-body clip-image-body">
+                    <div class="coast-artwork" aria-label="地中海蓝门海岸风景示例图">
+                      <svg viewBox="0 0 240 132" preserveAspectRatio="xMidYMid slice">
+                        <defs>
+                          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#3E7FD4" />
+                            <stop offset="100%" stop-color="#9AC8F7" />
+                          </linearGradient>
+                          <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#1E6FD9" />
+                            <stop offset="100%" stop-color="#0E4DA4" />
+                          </linearGradient>
+                        </defs>
+                        <rect width="240" height="86" fill="url(#sky)" />
+                        <rect y="84" width="240" height="48" fill="url(#sea)" />
+                        <circle cx="186" cy="30" r="14" fill="#FFF7D6" opacity="0.9" />
+                        <path d="M0 78 Q55 62 110 74 T240 68 L240 90 L0 90 Z" fill="#F4F6F9" />
+                        <rect x="26" y="42" width="52" height="54" rx="2" fill="#FFFFFF" />
+                        <rect x="42" y="56" width="20" height="32" rx="10" fill="#1F4ED8" />
+                        <rect x="90" y="52" width="38" height="40" rx="2" fill="#E8EEF5" />
+                        <path d="M16 94 L128 94 L112 132 L0 132 Z" fill="#E4DCD0" />
+                      </svg>
+                      <span class="img-chip">coast.jpg</span>
+                    </div>
+                  </div>
+                  <div class="clip-card-foot">
+                    <span class="type-tag mono">图片 · PNG</span>
+                    <span class="copy-hint">点击复制</span>
+                    <span class="time-tag">5 分钟前</span>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Empty State for Search/Filter -->
+              <div class="shelf-empty" id="shelf-empty" hidden>
+                <p id="shelf-empty-text">暂无匹配记录，试试清空搜索词或收藏几张卡片。</p>
+                <button type="button" class="btn-reset-demo" id="reset-demo-btn">恢复全部卡片</button>
+              </div>
+            </div>
+
+            <div class="shelf-statusbar">
+              <span id="shelf-count" class="mono">显示 4 条记录</span>
+              <span class="shelf-tip" id="demo-caption">点卡片或按 1–4 快捷复制 · 点图钉收藏</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Demo Switcher Below Frame -->
+        <div class="demo-bar">
+          <div class="demo-tabs" role="tablist" aria-label="交互演示模式">
+            <button type="button" class="demo-tab is-active" data-mode="history" role="tab" aria-selected="true">复制历史</button>
+            <button type="button" class="demo-tab" data-mode="search" role="tab" aria-selected="false">搜索找回</button>
+            <button type="button" class="demo-tab" data-mode="pinned" role="tab" aria-selected="false">收藏备忘</button>
+          </div>
+          <button type="button" class="demo-play" id="demo-play-btn" aria-label="暂停或继续自动演示" title="切换自动轮播">
+            <span id="demo-play-icon">Ⅱ</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architectural 3-Column Utility Spec Grid -->
+    <section class="highlights">
+      <div class="container">
+        <div class="spec-grid reveal">
+          <div class="spec-cell">
+            <div class="spec-head">
+              <span class="spec-num mono">01</span>
+              <span class="spec-tag">剪贴 + 检索</span>
+            </div>
+            <div class="spec-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <h3>搜一下就找到</h3>
+            <p>文字、链接、图片自动留档，按关键词秒搜。</p>
+          </div>
+
+          <div class="spec-cell">
+            <div class="spec-head">
+              <span class="spec-num mono">02</span>
+              <span class="spec-tag">随手备忘</span>
+            </div>
+            <div class="spec-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 17v5" />
+                <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z" />
+              </svg>
+            </div>
+            <h3>常用内容一次收藏</h3>
+            <p>地址、模板点图钉固定，下次随手贴。</p>
+          </div>
+
+          <div class="spec-cell">
+            <div class="spec-head">
+              <span class="spec-num mono">03</span>
+              <span class="spec-tag">本地闭环</span>
+            </div>
+            <div class="spec-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+            </div>
+            <h3>全程留在本机</h3>
+            <p>历史、识字与 AI 整理不经云端，安心好用。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warm-Stone Precision Band: Local AI -->
+    <section class="local-ai-section" id="local-ai">
+      <div class="container">
+        <div class="ai-header-row">
+          <div class="section-header">
+            <span class="eyebrow mono">LOCAL AI · 本地整理</span>
+            <h2>零散的消息，<br class="mobile-br" /><span class="title-accent">有条理的清单。</span></h2>
+            <p id="ai-scenario-desc">零散收货消息，一键整理成表。</p>
+          </div>
+
+          <div class="ai-scenario-tabs" role="tablist" aria-label="本地 AI 整理场景示例">
+            <button type="button" class="ai-scenario-tab is-active" data-scenario="shipping" role="tab" aria-selected="true">收货清单</button>
+            <button type="button" class="ai-scenario-tab" data-scenario="meeting" role="tab" aria-selected="false">会议待办</button>
+          </div>
+        </div>
+
+        <div class="ai-workbench reveal">
+          <!-- Left: Raw Chat -->
+          <div class="ai-pane ai-source">
+            <div class="pane-head">
+              <span class="pane-title">聊天原文</span>
+              <span class="pane-badge mono">2 条消息</span>
+            </div>
+
+            <div class="chat-list" id="ai-chat-list">
+              <div class="chat-bubble" id="chat-1">
+                <div class="avatar avatar-a">林</div>
+                <div class="bubble-content">
+                  <p>我这边寄<mark class="ai-token">上海市浦东新区示例路18号2单元301</mark>，写<mark class="ai-token">林小雨</mark>。麻烦<mark class="ai-token">周末送到，我在家</mark>。</p>
+                </div>
+              </div>
+
+              <div class="chat-bubble" id="chat-2">
+                <div class="avatar avatar-b">周</div>
+                <div class="bubble-content">
+                  <p><mark class="ai-token">周可可</mark>收。寄<mark class="ai-token">深圳市南山区示例路9号</mark>，<mark class="ai-token">到了放前台就行</mark>。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Flow Bridge -->
+          <div class="ai-flow-bridge" id="ai-flow-bridge">
+            <span class="flow-track" aria-hidden="true"><span class="flow-pulse"></span></span>
+            <button type="button" class="ai-trigger-btn" id="ai-replay-btn" title="重新演示整理过程">
+              <svg class="ai-sparkle" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+              </svg>
+              <span id="ai-trigger-label">本机 AI 整理</span>
+            </button>
+            <span class="flow-track" aria-hidden="true"><span class="flow-pulse delay"></span></span>
+          </div>
+
+          <!-- Right: Structured Table -->
+          <div class="ai-pane ai-result">
+            <div class="pane-head">
+              <div class="pane-head-left">
+                <span class="pane-title" id="ai-result-title">收货清单</span>
+                <span class="pane-badge success" id="ai-status-badge">已结构化</span>
+              </div>
+              <button type="button" class="pane-copy-btn" id="ai-copy-btn">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+                <span id="ai-copy-label">复制清单</span>
+              </button>
+            </div>
+
+            <div class="table-wrap" id="ai-table-wrap">
+              <table class="clean-table">
+                <thead>
+                  <tr id="ai-table-head">
+                    <th>收件人</th>
+                    <th>详细地址</th>
+                    <th>备注</th>
+                  </tr>
+                </thead>
+                <tbody id="ai-table-body">
+                  <tr class="ai-row">
+                    <td><strong>林小雨</strong></td>
+                    <td>上海市浦东新区示例路18号2单元301</td>
+                    <td><span class="note-chip">周末送到，我在家</span></td>
+                  </tr>
+                  <tr class="ai-row">
+                    <td><strong>周可可</strong></td>
+                    <td>深圳市南山区示例路9号</td>
+                    <td><span class="note-chip">到了放前台就行</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="table-skeleton" aria-hidden="true">
+                <div class="skeleton-row">
+                  <span class="skeleton-bar w-sm"></span>
+                  <span class="skeleton-bar w-lg"></span>
+                  <span class="skeleton-bar w-md"></span>
+                </div>
+                <div class="skeleton-row">
+                  <span class="skeleton-bar w-sm"></span>
+                  <span class="skeleton-bar w-lg"></span>
+                  <span class="skeleton-bar w-md"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-footer-bar">
+          <div class="privacy-note">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0D7A56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <span>本机模型处理 · 无需云端 API · 原文不上传</span>
+          </div>
+          <a
+            class="guide-link"
+            href="guide.html#local-model"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>本地模型配置指引</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Precision Capture & OCR Section -->
+    <section class="ocr-section" id="capture">
+      <div class="container">
+        <div class="ocr-grid reveal">
+          <div class="ocr-copy">
+            <span class="eyebrow mono">CAPTURE &amp; OCR · 随手识字</span>
+            <h2>截下来，文字也能直接拿来用。</h2>
+            <p>框选图片文字，一键提取复制。</p>
+
+            <ul class="ocr-steps">
+              <li>
+                <span class="step-num mono">01</span>
+                <div>
+                  <strong>框选任意区域</strong>
+                  <span>单号、验证码、海报文字都能取</span>
+                </div>
+              </li>
+              <li>
+                <span class="step-num mono">02</span>
+                <div>
+                  <strong>离线秒出字，自动进历史</strong>
+                  <span>复制即用，之后随时搜得到</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Dark-Graphite macOS Preview Window -->
+          <div class="ocr-visual">
+            <div class="ocr-window">
+              <div class="ocr-window-bar">
+                <div class="traffic-lights small" aria-hidden="true">
+                  <span class="tl red"></span>
+                  <span class="tl yellow"></span>
+                  <span class="tl green"></span>
+                </div>
+                <span class="ocr-filename mono">快递面单.jpg · 照片预览</span>
+                <span class="ocr-chip">点击虚线框重播</span>
+              </div>
+
+              <div class="waybill-canvas">
+                <!-- Thermal Waybill Label -->
+                <div class="waybill-paper">
+                  <div class="wb-top">
+                    <span class="wb-brand mono">SP EXPRESS</span>
+                    <span class="wb-route">沪 → 粤</span>
+                  </div>
+
+                  <div class="wb-barcode" aria-label="运单条形码">
+                    <svg viewBox="0 0 320 52" preserveAspectRatio="none" aria-hidden="true">
+                      <g fill="#141413">
+                        <rect x="2" y="0" width="3" height="52" />
+                        <rect x="7" y="0" width="1.5" height="52" />
+                        <rect x="11" y="0" width="4" height="46" />
+                        <rect x="18" y="0" width="2" height="46" />
+                        <rect x="22" y="0" width="1.5" height="46" />
+                        <rect x="26" y="0" width="5" height="46" />
+                        <rect x="34" y="0" width="2" height="46" />
+                        <rect x="39" y="0" width="3.5" height="46" />
+                        <rect x="45" y="0" width="1.5" height="46" />
+                        <rect x="49" y="0" width="2.5" height="46" />
+                        <rect x="55" y="0" width="5" height="46" />
+                        <rect x="63" y="0" width="1.5" height="46" />
+                        <rect x="67" y="0" width="3" height="46" />
+                        <rect x="73" y="0" width="2" height="46" />
+                        <rect x="78" y="0" width="4" height="46" />
+                        <rect x="85" y="0" width="1.5" height="46" />
+                        <rect x="89" y="0" width="3" height="46" />
+                        <rect x="95" y="0" width="5" height="46" />
+                        <rect x="103" y="0" width="2" height="46" />
+                        <rect x="107" y="0" width="1.5" height="46" />
+                        <rect x="112" y="0" width="4" height="46" />
+                        <rect x="119" y="0" width="2.5" height="46" />
+                        <rect x="124" y="0" width="1.5" height="46" />
+                        <rect x="129" y="0" width="3.5" height="46" />
+                        <rect x="135" y="0" width="2" height="46" />
+                        <rect x="140" y="0" width="5" height="46" />
+                        <rect x="148" y="0" width="1.5" height="46" />
+                        <rect x="152" y="0" width="3" height="46" />
+                        <rect x="157" y="0" width="2" height="52" />
+                        <rect x="161" y="0" width="2" height="52" />
+                        <rect x="166" y="0" width="4" height="46" />
+                        <rect x="173" y="0" width="1.5" height="46" />
+                        <rect x="177" y="0" width="3" height="46" />
+                        <rect x="183" y="0" width="5" height="46" />
+                        <rect x="191" y="0" width="2" height="46" />
+                        <rect x="195" y="0" width="1.5" height="46" />
+                        <rect x="200" y="0" width="3.5" height="46" />
+                        <rect x="206" y="0" width="2" height="46" />
+                        <rect x="211" y="0" width="5" height="46" />
+                        <rect x="219" y="0" width="1.5" height="46" />
+                        <rect x="223" y="0" width="3" height="46" />
+                        <rect x="229" y="0" width="4" height="46" />
+                        <rect x="236" y="0" width="2" height="46" />
+                        <rect x="241" y="0" width="1.5" height="46" />
+                        <rect x="245" y="0" width="5" height="46" />
+                        <rect x="253" y="0" width="2.5" height="46" />
+                        <rect x="258" y="0" width="1.5" height="46" />
+                        <rect x="263" y="0" width="3.5" height="46" />
+                        <rect x="269" y="0" width="2" height="46" />
+                        <rect x="274" y="0" width="5" height="46" />
+                        <rect x="282" y="0" width="1.5" height="46" />
+                        <rect x="286" y="0" width="3" height="46" />
+                        <rect x="292" y="0" width="4" height="46" />
+                        <rect x="299" y="0" width="2" height="46" />
+                        <rect x="304" y="0" width="3.5" height="46" />
+                        <rect x="311" y="0" width="1.5" height="52" />
+                        <rect x="315" y="0" width="3" height="52" />
+                      </g>
+                    </svg>
+                    <span class="wb-barcode-digits mono">SP031826079941</span>
+                  </div>
+
+                  <!-- Interactive Marquee Selection -->
+                  <div class="wb-marquee" id="wb-marquee" title="点击重新演示扫描">
+                    <div class="scan-beam" aria-hidden="true"></div>
+                    <span class="wb-code mono">SP 0318 2607</span>
+                    <span class="marquee-handle tl"></span>
+                    <span class="marquee-handle tr"></span>
+                    <span class="marquee-handle bl"></span>
+                    <span class="marquee-handle br"></span>
+                  </div>
+
+                  <div class="wb-meta">
+                    <span>收件：林小雨 · 浦东新区示例路18号</span>
+                  </div>
+                </div>
+
+                <!-- High-Contrast Result HUD -->
+                <div class="ocr-hud" id="ocr-hud">
+                  <div class="ocr-hud-info">
+                    <div class="hud-label-row">
+                      <span class="hud-dot" aria-hidden="true"></span>
+                      <span class="hud-label" id="hud-label">正在识别…</span>
+                    </div>
+                    <code class="hud-code" id="hud-code">SP 0318 2607</code>
+                  </div>
+                  <button type="button" class="ocr-copy-btn" id="ocr-copy-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                    </svg>
+                    <span id="ocr-copy-label">复制文字</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collapsed Single-Column FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="faq-header">
+          <span class="eyebrow mono">FAQ · 下载前你可能关心</span>
+          <h2>常见问题</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>
+              <span>拾贴真的完全免费吗？需要登录吗？</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p>完全免费，无广告、无会员墙，也不用注册登录账号，下载 .dmg 拖进应用程序即可直接使用。</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>剪贴板里经常有密码和隐私内容，安全吗？</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p>所有剪贴历史、图片、识字内容与本地 AI 推理均在你的 Mac 本机完成，不经过任何云端服务器。</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>首次打开如果系统提示「无法验证开发者」怎么办？</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p>独立开发者应用未上架 App Store 时 macOS 会弹出例行安全提示，按照<a href="guide.html#start" target="_blank" rel="noopener">安装指引</a>放行一次即可正常运行。</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>必须先配置本地 AI 才能用吗？支持哪些 Mac？</span>
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <p>不需要。剪贴历史、模糊检索、收藏备忘和截屏识字全部开箱即用；本地 AI 是可选进阶能力。目前支持 Apple Silicon（M 系列芯片）与 macOS 14 及以上系统。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Obsidian Closing CTA -->
+    <section class="closing-cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-logo" aria-hidden="true">
+            <img src="assets/brand/logo.svg" alt="" width="48" height="48" />
+          </div>
+          <h2>每一次复制，都值得被记住。</h2>
+          <p>免费、纯净、本机运行，下载即用。</p>
+          <div class="cta-actions">
+            <a
+              class="btn-cta-light download-link"
+              href="https://github.com/wlei24/sparepage-releases/releases/download/v0.2.5/SparePage-0.2.5-macOS-arm64.dmg"
+              aria-label="下载拾贴 v0.2.5，Apple Silicon macOS 安装包"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              <span>免费下载 Mac 版</span>
+              <span class="btn-ext mono">.dmg</span>
+            </a>
+            <a
+              class="btn-cta-ghost"
+              data-release-notes href="https://github.com/wlei24/sparepage-releases/releases/tag/v0.2.5"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>查看 <span data-release-version>v0.2.5</span> 版本说明</span>
+            </a>
+          </div>
+          <div class="cta-meta mono"><span data-release-version>v0.2.5</span> · Apple Silicon · macOS 14+</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <strong>拾贴 SparePage</strong>
+        <span>· Jeremy Wang</span>
+      </div>
+      <div class="footer-links">
+        <a href="guide.html" target="_blank" rel="noopener">使用指南</a>
+        <a href="https://github.com/wlei24/sparepage-releases" target="_blank" rel="noopener">GitHub</a>
+        <a data-release-notes href="https://github.com/wlei24/sparepage-releases/releases/tag/v0.2.5" target="_blank" rel="noopener">版本说明</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Native HUD Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js?v=14"></script>
+  <script src="assets/js/release.js" defer></script>
+</body>
+</html>
